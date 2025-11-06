@@ -1,0 +1,20 @@
+                ┌─────────────────────┐
+                │     Producto        │  (Abstract Class)
+                ├─────────────────────┤
+                │ - nombre: String    │
+                │ - precio: double    │
+                │ - stock: int        │
+                ├─────────────────────┤
+                │ + mostrarInfo():void│
+                │ + calcularDescuento():double (abstract)│
+                └─────────────────────┘
+                         ▲
+     ┌────────────────────┼────────────────────┐
+     │                    │                    │
+┌────────────┐     ┌─────────────┐      ┌────────────┐
+│ Electrónico│     │  Alimento   │      │   Ropa     │
+├────────────┤     ├─────────────┤      ├────────────┤
+│ + garantía │     │ + caducidad │      │ + talla     │
+├────────────┤     ├─────────────┤      ├────────────┤
+│ +calcularDescuento()│+calcularDescuento()│+calcularDescuento()│
+└────────────┘     └─────────────┘      └────────────┘
